@@ -1,6 +1,8 @@
 ---
 - name: Build isis configs
   hosts: fabric
+  vars_files:
+    - ../vars/isis_topo2.yml
   tasks:
     - name: Build config from template and data model
       ansible.builtin.template:

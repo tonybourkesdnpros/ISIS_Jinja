@@ -13,6 +13,20 @@ CVP_CONFIGLETS_ISIS:
   borderleaf1_isis: "{{lookup('file','{{path}}/configs/isis/borderleaf1.cfg')}}"
   borderleaf2_isis: "{{lookup('file','{{path}}/configs/isis/borderleaf2.cfg')}}"
 
+
+CVP_CONFIGLETS_ISIS_UNDERLAY:
+
+  spine1_isis: "{{lookup('file','{{path}}/configs/isis_underlay/spine1.cfg')}}"
+  spine2_isis: "{{lookup('file','{{path}}/configs/isis_underlay/spine2.cfg')}}"
+  spine3_isis: "{{lookup('file','{{path}}/configs/isis_underlay/spine3.cfg')}}"
+  spine4_isis: "{{lookup('file','{{path}}/configs/isis_underlay/spine4.cfg')}}"  
+  leaf1_isis: "{{lookup('file','{{path}}/configs/isis_underlay/leaf1.cfg')}}"
+  leaf2_isis: "{{lookup('file','{{path}}/configs/isis_underlay/leaf2.cfg')}}"
+  leaf3_isis: "{{lookup('file','{{path}}/configs/isis_underlay/leaf3.cfg')}}"
+  leaf4_isis: "{{lookup('file','{{path}}/configs/isis_underlay/leaf4.cfg')}}"  
+  borderleaf1_isis: "{{lookup('file','{{path}}/configs/isis_underlay/borderleaf1.cfg')}}"
+  borderleaf2_isis: "{{lookup('file','{{path}}/configs/isis_underlay/borderleaf2.cfg')}}"
+
 CVP_DEVICES_ISIS:
 
   - fqdn: 'spine1'

@@ -1,0 +1,151 @@
+---
+global_settings:
+  isis_instance: Osiris
+  mtu: 1550
+devices:
+  leaf1:
+    isis:
+      area: 49.0001
+      id: 0000.0001.0001
+      type: level-1
+    interfaces:
+      loopbacks:
+        loopback0: 192.168.101.1
+        loopback1: 192.168.102.1
+      p2p:
+        - Ethernet1
+        - Ethernet2
+        - Ethernet3
+        - Ethernet4
+        - Ethernet5
+        - Ethernet6
+  leaf2:
+    isis:
+      area: 49.0001
+      id: 0000.0001.0002
+      type: level-1
+    interfaces:
+      loopbacks:
+        loopback0: 192.168.101.2
+        loopback1: 192.168.102.1
+      p2p:
+        - Ethernet1
+        - Ethernet2
+        - Ethernet3
+        - Ethernet4
+        - Ethernet5
+        - Ethernet6
+  leaf3:
+    isis:
+      area: 49.0001
+      id: 0000.0001.0003
+      type: level-1
+    interfaces:
+      loopbacks:
+        loopback0: 192.168.101.3
+        loopback1: 192.168.102.3
+      p2p:
+        - Ethernet1
+        - Ethernet2
+        - Ethernet3
+        - Ethernet4
+        - Ethernet5
+        - Ethernet6
+  leaf4:
+    isis:
+      area: 49.0001
+      id: 0000.0001.0004
+      type: level-1
+    interfaces:
+      loopbacks:
+        loopback0: 192.168.101.4
+        loopback1: 192.168.102.3
+      p2p:
+        - Ethernet1
+        - Ethernet2
+        - Ethernet3
+        - Ethernet4
+        - Ethernet5
+        - Ethernet6
+  spine1:
+    isis:
+      area: 49.0001
+      id: 0000.0002.0001
+      type: level-1
+    interfaces:
+      loopbacks:
+        loopback0: 192.168.101.101
+      p2p:
+        - Ethernet3
+        - Ethernet4
+        - Ethernet5
+        - Ethernet6
+  spine2:
+    isis:
+      area: 49.0001
+      id: 0000.0002.0002
+      type: level-1
+    interfaces:
+      loopbacks:
+        loopback0: 192.168.101.102
+      p2p:
+        - Ethernet3
+        - Ethernet4
+        - Ethernet5
+        - Ethernet6
+  spine3:
+    isis:
+      area: 49.0001
+      id: 0000.0002.0003
+      type: level-1
+    interfaces:
+      loopbacks:
+        loopback0: 192.168.101.103
+      p2p:
+        - Ethernet3
+        - Ethernet4
+        - Ethernet5
+        - Ethernet6
+  spine4:
+    isis:
+      area: 49.0001
+      id: 0000.0002.0004
+      type: level-1
+    interfaces:
+      loopbacks:
+        loopback0: 192.168.101.104
+      p2p:
+        - Ethernet3
+        - Ethernet4
+        - Ethernet5
+        - Ethernet6
+  borderleaf1:
+    isis:
+      area: 49.0001
+      id: 0000.0003.0001
+      type: level-1
+    interfaces:
+      loopbacks:
+        loopback0: 192.168.101.121
+      p2p:
+        - Ethernet1
+        - Ethernet2
+        - Ethernet3
+        - Ethernet4
+        - Ethernet5
+        - Ethernet6
+  borderleaf2:
+    isis:
+      area: 49.0001
+      id: 0000.0003.0002
+      type: level-1
+    interfaces:
+      loopbacks:
+        loopback0: 192.168.101.122
+      p2p:
+        - Ethernet1
+        - Ethernet2
+        - Ethernet3
+        - Ethernet4
+        - Ethernet5
+        - Ethernet6

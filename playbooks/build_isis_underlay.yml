@@ -1,0 +1,11 @@
+---
+- name: Build isis configs
+  hosts: fabric
+  vars_files:
+    - ../vars/isis_underlay.yml
+  tasks:
+    - name: Build config from template and data model
+      ansible.builtin.template:
+        src: "../templates/isis.j2"
+        dest: "configs/isis_underlay/{{ inventory_hostname }}.cfg"
+        mode: "0644"
